@@ -12,9 +12,9 @@
 `<html>`
 `cat test.txt`
 
-''' python
+``` python
 
 def testfunc():
   print("Hello")
   
-'''
+```
