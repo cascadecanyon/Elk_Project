@@ -4,4 +4,4 @@ William English
 
 The files in this repository were used to configure the network depicted below.
 
-![Network Topology](Ek-Stack_Diagram.png)
+![Network Topology](Elk-Stack_Diagram.png)
