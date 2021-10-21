@@ -4,4 +4,4 @@ William English
 
 The files in this repository were used to configure the network depicted below.
 
-![Network Topology](Elk-Stack_Diagram.png)
+![Network Topology](https://github.com/cascadecanyon/Elk_Project/blob/main/Images/Elk-Stack_Diagram.png)
