@@ -44,8 +44,8 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-Box-Provisioner and ELK Stack (Kibana) machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 'My IP'
 
-Machines within the network can only be accessed by Jump-Box-Provisioner.
-- The Jump Box can access the ELK VM using SSH.  The Jump Box's IP address is 10.0.0.4
+Machines within the network can only be accessed by Jump-Box-Provisioner (IP 10.0.0.4)
+- The Jump Box can access the ELK VM using SSH.  The Elk's VM IP address is 10.1.0.4
 
 A summary of the access policies in place can be found in the table below.
 
