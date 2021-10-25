@@ -113,7 +113,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 	* `ansible-playbook /etc/ansible/Install-Elk.yml`
 	* `ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml`
 	* `ansible-playbook /etc/ansible/roles/Metricbeat-playbook.yml`
-	 
+ 
 - `Install_Elk.yml` configures only the server(s) listed as `[elkserver]` in `/etc/ansible/hosts`
 - `Filebeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
 - `Metricbeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
