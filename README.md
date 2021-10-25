@@ -109,12 +109,12 @@ In order to use the playbook, you will need to have an Ansible control node alre
 2. Start the Ansible Docker container `~$ sudo docker start <Ansible Container>`
 3. Attach a shell to the Ansible Docker container with the command `~$ sudo docker attach <Ansible Container Name>`
 4. Run the playbooks with the following commands:
-	* `ansible-playbook /etc/ansible/pentest.yml`
-	* `ansible-playbook /etc/ansible/install-elk.yml`
-	* `ansible-playbook /etc/ansible/roles/filebeat-playbook.yml`
+	* `ansible-playbook /etc/ansible/dvwa-playbook.yml`
+	* `ansible-playbook /etc/ansible/Install-Elk.yml`
+	* `ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml`
 
-- `install_elk.yml` configures only the server(s) listed as `[elkserver]` in `/etc/ansible/hosts`
-- `filebeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
+- `Install_Elk.yml` configures only the server(s) listed as `[elkserver]` in `/etc/ansible/hosts`
+- `Filebeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
 
 - After running the playbooks, go to Kibana to check that the installation was successful by viewing Filebeat and Metricbeat data     and reports in the Kibana Dashboard
-- Kibana can be accessed at [http://\<elk-server-ip\>:5601/app/kibana]()
+- Kibana can be accessed at [http://\<Elk-server-ip\>:5601/app/kibana]()
