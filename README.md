@@ -1,4 +1,4 @@
-William English
+**William English**
 
 # Automated Elk Stack Deployment
 
@@ -112,9 +112,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 	* `ansible-playbook /etc/ansible/dvwa-playbook.yml`
 	* `ansible-playbook /etc/ansible/Install-Elk.yml`
 	* `ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml`
-
+	* `ansible-playbook /etc/ansible/roles/Metricbeat-playbook.yml`
+	 
 - `Install_Elk.yml` configures only the server(s) listed as `[elkserver]` in `/etc/ansible/hosts`
 - `Filebeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
-
+- `Metricbeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
+- 
 - After running the playbooks, go to Kibana to check that the installation was successful by viewing Filebeat and Metricbeat data     and reports in the Kibana Dashboard
 - Kibana can be accessed at [http://\<Elk-server-ip\>:5601/app/kibana]()
