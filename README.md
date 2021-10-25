@@ -45,16 +45,17 @@ Only the Jump-Box-Provisioner and ELK Stack (Kibana) machines can accept connect
 'My IP'
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
+- The Jump Box can access the ELK VM using SSH.  The Jump Box's IP address is 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
 | Name                 | Publicly Accessible | Allowed IP Addresses |
 |----------------------|---------------------|----------------------|
-| Jump Box             | Yes                 | My IP Address        |
-| Elk-stack            | Yes                 | My IP Address        |
-| Web-1                | No                  | 10.0.0.4             |
-| Web-2                | No                  | 10.0.0.4             |
-| Web-3                | No                  | 10.0.0.4             |
+| Jump Box             | Yes                 | My IP Address (ssh)  |
+| Elk-stack            | Yes                 | My IP Address (ssh)  |
+| Web-1                | No                  | 10.0.0.5             |
+| Web-2                | No                  | 10.0.0.6             |
+| Web-3                | No                  | 10.0.0.7             |
 
 
 ### Elk Configuration
@@ -76,7 +77,7 @@ This ELK server is configured to monitor the following machines:
 - Web 1: 10.0.0.5  
 - Web 2: 10.0.0.6 
 - Web 3: 10.0.0.7
-We have installed the following Beats on these machines:
+- We have installed the following Beats on these machines:
 - Filebeats
 - Metricbeats
 
@@ -87,7 +88,7 @@ These Beats allow us to collect the following information from each machine:
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
+- SSH into the control node and follow the steps below:
 - Copy the playbook files to Ansible Docker Container.
 - Update the Ansible hosts file `/etc/ansible/hosts` to include the following: 
 
@@ -115,5 +116,5 @@ SSH into the control node and follow the steps below:
 - `install_elk.yml` configures only the server(s) listed as `[elkserver]` in `/etc/ansible/hosts`
 - `filebeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
 
-- After running the playbooks, go to Kibana to check that the installation was successful by viewing Filebeat and Metricbeat data and reports in the Kibana Dashboard
+- After running the playbooks, go to Kibana to check that the installation was successful by viewing Filebeat and Metricbeat data     and reports in the Kibana Dashboard
 - Kibana can be accessed at [http://\<elk-server-ip\>:5601/app/kibana]()
