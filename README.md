@@ -119,6 +119,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 - `Metricbeat-playbook.yml` configures the servers listed as `[webservers]` in `/etc/ansible/hosts`
  
 - After running the playbooks, go to Kibana to check that the installation was successful by viewing Filebeat and Metricbeat data     and reports in the Kibana Dashboard
-- Kibana can be accessed at [http://\<Elk-server-ip\>:5601/app/kibana]()
-- Kibana can be accessed at http://<Elk-server-ip>:5601/app/kibana
-  with this info to show what kibana looks like
+- Kibana can be accessed at [http://\<Elk-server-ip\>:5601/app/kibana]() to show what Kibana looks like
+
